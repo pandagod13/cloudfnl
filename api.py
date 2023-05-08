@@ -5,7 +5,7 @@ from google.cloud import storage
 import os
 
 app = Flask(__name__)
-app.config["JWT_SECRET_KEY"] = "super-secret"  # You should use a more secure key in production
+app.config["JWT_SECRET_KEY"] = "secret"
 jwt = JWTManager(app)
 
 storage_client = storage.Client.from_service_account_json("comp7033-8fb0726ce29c.json")
